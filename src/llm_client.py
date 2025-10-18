@@ -8,7 +8,7 @@ LLM_MODEL = os.getenv("LLM_MODEL", "meta-llama/llama-4-scout-17b-16e-instruct")
 def generate_answer(prompt: str , temperature: float = 0.3) -> str:
     client = Groq(api_key=GROQ_API_KEY)
     messages = [
-        {"role": "system", "content": "You are a helpful assistant. Response the queries based on the given set of contexts.Also Cite sources by [doc_title] in each paragrapgh if required"},
+        {"role": "system", "content": "You are a helpful assistant. Response the queries based on the given set of contexts. Also Cite sources by [doc_title] in each paragrapgh if required and try to answer to the point."},
         {"role": "user", "content": prompt}
     ]
     completion = client.chat.completions.create(

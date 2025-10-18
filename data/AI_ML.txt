@@ -1,0 +1,29 @@
+Artificial Intelligence (AI) is the branch of computer science that aims to create machines capable of performing tasks that typically require human intelligence. These tasks include problem-solving, pattern recognition, natural language understanding, decision-making, and learning from data. AI can be classified into narrow AI, which is designed for a specific task, and general AI, which can perform any intellectual task that a human can do. Machine Learning (ML) is a subset of AI that focuses on algorithms that allow machines to learn from data without being explicitly programmed.
+
+ML can be categorized into supervised learning, unsupervised learning, and reinforcement learning. In supervised learning, the model is trained using labeled data, where input features and corresponding outputs are known. Common supervised algorithms include linear regression, logistic regression, decision trees, support vector machines (SVM), and neural networks. Linear regression predicts a continuous output using the formula:
+y = β0 + β1*x1 + β2*x2 + ... + βn*xn + ε
+where y is the target, x1...xn are input features, β are coefficients, and ε is the error term.
+
+Logistic regression is used for classification tasks. The output probability is computed using the sigmoid function:
+σ(z) = 1 / (1 + e^(-z))
+Decision trees split data based on feature values to create a tree structure of decisions, while SVM aims to find the optimal hyperplane that separates data into classes.
+
+Unsupervised learning works with unlabeled data to find patterns or structure. Clustering algorithms, such as K-Means and Hierarchical Clustering, group similar data points together. Dimensionality reduction techniques like Principal Component Analysis (PCA) reduce the number of features while preserving variance. PCA computes new features (principal components) as linear combinations of original features, maximizing variance.
+
+Reinforcement learning trains agents to make sequential decisions by interacting with an environment. An agent receives rewards or penalties based on its actions. The goal is to maximize cumulative reward over time. Key concepts include state, action, reward, policy, and value function. Q-Learning is a popular RL algorithm, updating the Q-value using:
+Q(s, a) = Q(s, a) + α[r + γ * max Q(s', a') - Q(s, a)]
+where α is the learning rate, γ is the discount factor, s is the state, a is the action, r is the reward, and s' is the next state.
+
+Neural networks are inspired by the human brain and consist of layers of neurons connected by weights. Each neuron performs a weighted sum of inputs and applies an activation function, such as ReLU or sigmoid. Deep learning uses multi-layer neural networks to model complex patterns in data. Popular deep learning models include Convolutional Neural Networks (CNNs) for image tasks, Recurrent Neural Networks (RNNs) for sequential data, and Transformers for NLP tasks. The attention mechanism in transformers allows models to weigh the importance of each input element dynamically.
+
+Data preprocessing is essential for ML. It includes data cleaning, normalization, standardization, handling missing values, feature encoding, and splitting data into training, validation, and test sets. Overfitting occurs when a model learns the training data too well but fails to generalize. Techniques like cross-validation, regularization (L1/Lasso, L2/Ridge), dropout, and early stopping help prevent overfitting.
+
+Evaluation metrics differ based on the task. For regression, Mean Squared Error (MSE) and R-squared are common. For classification, metrics include accuracy, precision, recall, F1-score, and ROC-AUC. Confusion matrices help visualize classification performance. Hyperparameter tuning improves model performance. Methods include grid search, random search, and Bayesian optimization.
+
+AI and ML have diverse applications. In healthcare, they aid disease diagnosis, drug discovery, and personalized treatment. In finance, AI predicts stock prices, detects fraud, and automates trading. Autonomous vehicles use ML for object detection, path planning, and decision-making. Natural Language Processing enables chatbots, machine translation, and sentiment analysis. Computer vision allows facial recognition, medical imaging, and automated inspection in manufacturing.
+
+Ethical considerations in AI are critical. Bias in training data can lead to unfair decisions. Transparency, accountability, and explainability are important for responsible AI. Privacy concerns arise with sensitive data. AI safety, robustness, and interpretability remain active research areas.
+
+Recent advances include Generative AI, such as Generative Adversarial Networks (GANs) and Large Language Models (LLMs) like GPT, which can generate human-like text, images, and code. GANs consist of a generator that creates data and a discriminator that distinguishes real from fake data. Training continues until the generator produces realistic data. LLMs use self-attention mechanisms and transformers to handle massive text corpora for tasks like summarization, question answering, and translation.
+
+Overall, AI and ML combine theory, algorithms, and data to solve real-world problems. Understanding data, models, metrics, and ethical implications is essential for developing robust and responsible AI systems. Continuous learning, experimentation, and staying updated with research are necessary for success in this rapidly evolving field.
