@@ -65,7 +65,7 @@ Technical-Assessment-RAG/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/Technical-Assessment-RAG.git
+git clone https://github.com/Ariful-Islam-Shakil/Technical-Assessment-RAG.git
 cd Technical-Assessment-RAG
 ```
 

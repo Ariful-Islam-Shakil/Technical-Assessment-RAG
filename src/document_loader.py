@@ -158,3 +158,9 @@ def build_corpus(docs: List[Dict[str, str]], chunk_size: int = 5, overlap: int =
             })
         print(f"Processsed {doc.get('title')} -> {len(chunks)}")
     return texts, metadata
+
+if __name__ == "__main__":
+    # Example usage
+    topics = ["Artificial Intelligence", "Machine Learning", "Natural Language Processing"]
+    fetch_wikipedia_articles(topics, save_dir="data")
+
